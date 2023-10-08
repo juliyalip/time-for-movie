@@ -1,6 +1,7 @@
 import React from 'react'
 import {NavLink} from 'react-router-dom'
 import {INavigate} from '../../data/navigate'
+import style from './Navigate.module.scss'
 
 
 interface IProp{
@@ -10,9 +11,9 @@ interface IProp{
 export default function Navigate({items}: IProp){
     return(
         <nav>
-            <ul>
+            <ul className={style.list}>
                {items.map(({path, title})=> (
-<li key={title}><NavLink to={`${path}`}>{title}</NavLink></li>
+<li key={title} className={style.item}><NavLink to={`${path}`} className={style.link}>{title}</NavLink></li>
                ))}
             </ul>
         </nav>

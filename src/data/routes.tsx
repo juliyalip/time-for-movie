@@ -1,4 +1,4 @@
 export const Router = {
   Home: "/",
-  Aboute: "/about",
+  Movies: "/movies",
 };
