@@ -8,7 +8,8 @@ export default function Movies() {
 
   const getMovies = async (movie: string) => {
     const response = await findMovie(movie);
-    setMuvies(response);
+
+    setMuvies(response.slice(0, 10));
   };
 
   return (
