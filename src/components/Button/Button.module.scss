@@ -1,10 +1,17 @@
-.base{
-    padding: 15px 25px
+.base {
+  padding: 5px 30px;
+  border: 0.5px solid black;
+  border-radius: 4px;
+  background-color: white;
+  font-size: 14px;
+  display: inline-block;
+  
+  &:hover{
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
+  }
 }
 
-
-.primary{
-    
-background-color: blue;
-color: white
+.primary {
+  background-color: blue;
+  color: white;
 }

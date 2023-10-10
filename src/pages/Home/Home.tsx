@@ -28,6 +28,6 @@ export default function Home() {
       <h2>Trending movies</h2>
       <MovieList items={trendMovies} />
     </section>
-      </Container>
+         </Container>
   );
 }

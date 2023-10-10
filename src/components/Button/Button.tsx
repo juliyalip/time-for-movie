@@ -3,10 +3,10 @@ import classNames from 'classnames'
 import style from './Button.module.scss'
 
 type TStyle = "primery" | "text" | "base"
-type Tbutton = "submit" | "reset" | "button";
+type Ttype = "submit" | "reset" | "button";
 
 interface IProps {
-  type?: Tbutton;
+  type?: Ttype;
   onClick?: (e: any) => void;
   children: React.ReactNode;
   variant?: TStyle
@@ -14,7 +14,7 @@ interface IProps {
 
 export default function Button({ type = "submit", onClick, children, variant }: IProps) {
   return <button type={type} onClick={onClick} className={classNames(style.base,{
-    [style.primary]: [variant]
+    [style.primary]: variant
   })}>
     {children}</button>;
 }
